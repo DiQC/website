@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – SolNat</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .blog-page-hero {
+      background: var(--green-deep);
+      padding: 8rem 0 4rem;
+      text-align: center;
+      color: white;
+    }
+    .blog-page-hero h1 { color: white; margin-bottom: 0.75rem; }
+    .blog-page-hero p  { color: rgba(255,255,255,0.65); }
+    .blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+    @media(max-width:768px){ .blog-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      Sol<span>Nat</span>
+    </a>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <a href="../index.html#contact" class="btn btn-primary" data-i18n="nav_quote">Demana pressupost</a>
+    </div>
+  </div>
+</nav>
+
+<div class="blog-page-hero">
+  <div class="container">
+    <span class="section-label" data-i18n="blog_label">Blog</span>
+    <h1 data-i18n="blog_title">Consells i novetats solar</h1>
+    <p>Articles sobre energia solar, manteniment, subvencions i tecnologia fotovoltaica.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="blog-grid stagger-children">
+
+      <article class="blog-card">
+        <div class="blog-card-img">🧹</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog1_tag">Manteniment</span>
+          <h3 data-i18n="blog1_title">Per què netejar les plaques cada any</h3>
+          <p data-i18n="blog1_desc">Estudis mostren que les plaques netes produeixen fins al 30% més d'energia.</p>
+          <div class="blog-meta"><span>📅</span><span data-i18n="blog_date1">12 mar 2025</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-img">💶</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog2_tag">Subvencions</span>
+          <h3 data-i18n="blog2_title">Guia completa d'ajudes solars a Catalunya per al 2025</h3>
+          <p data-i18n="blog2_desc">IDAE, PREE, MOVES III i bonificacions municipals.</p>
+          <div class="blog-meta"><span>📅</span><span data-i18n="blog_date2">28 feb 2025</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-img">⚙️</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog3_tag">Tecnologia</span>
+          <h3 data-i18n="blog3_title">Panells bifacials: val la pena la inversió extra?</h3>
+          <p data-i18n="blog3_desc">Analitzem els avantatges dels panells bifacials.</p>
+          <div class="blog-meta"><span>📅</span><span data-i18n="blog_date3">14 feb 2025</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2025 SolNat. Tots els drets reservats.</span>
+      <div class="footer-links">
+        <a href="../index.html">Inici</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contacte</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

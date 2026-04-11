@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SolNat – Instal·lació, neteja i manteniment de plaques solars a Catalunya. Pressupost gratuït." />
+  <meta name="keywords" content="plaques solars, energia solar, Catalunya, instal·lació solar, neteja plaques, manteniment solar" />
+  <meta property="og:title" content="SolNat – Energia Solar a Catalunya" />
+  <meta property="og:description" content="Experts en energia solar. Instal·lació, neteja i manteniment professional a tota Catalunya." />
+  <meta property="og:type" content="website" />
+  <title>SolNat – Energia Solar a Catalunya</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+
+    <a href="/" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      Sol<span>Nat</span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="#services" data-i18n="nav_services">Serveis ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#services" data-i18n="nav_residential">Solar Residencial</a></li>
+          <li><a href="#services" data-i18n="nav_commercial">Solar Comercial</a></li>
+          <li><a href="#services" data-i18n="nav_maintenance">Manteniment</a></li>
+          <li><a href="#services" data-i18n="nav_cleaning">Neteja de Plaques</a></li>
+          <li><a href="#services" data-i18n="nav_monitoring">Monitoratge</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#about" data-i18n="nav_about">Nosaltres ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#about" data-i18n="nav_aboutus">Qui som</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Preguntes Freqüents</a></li>
+        </ul>
+      </li>
+      <li><a href="#how-it-works" data-i18n="nav_how">Com treballem</a></li>
+      <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contacte</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav_quote">Demana pressupost</a>
+      <button class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <a href="#services" data-i18n="nav_services">Serveis</a>
+  <div class="mobile-sub">
+    <a href="#services" data-i18n="nav_residential">Solar Residencial</a>
+    <a href="#services" data-i18n="nav_commercial">Solar Comercial</a>
+    <a href="#services" data-i18n="nav_maintenance">Manteniment</a>
+    <a href="#services" data-i18n="nav_cleaning">Neteja</a>
+  </div>
+  <a href="#about" data-i18n="nav_about">Nosaltres</a>
+  <a href="#how-it-works" data-i18n="nav_how">Com treballem</a>
+  <a href="#calculator" data-i18n="calc_label">Calculadora</a>
+  <a href="#blog" data-i18n="nav_blog">Blog</a>
+  <a href="#contact" class="btn btn-primary" style="text-align:center;margin-top:1rem" data-i18n="nav_quote">Demana pressupost</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     HERO WITH SLIDESHOW
+════════════════════════════════════════ -->
+<section id="hero">
+
+  <!-- Slideshow background -->
+  <div class="hero-slideshow">
+    <div class="hero-slide active" style="background-image:url('images/slide-1.png')"></div>
+    <div class="hero-slide" style="background-image:url('images/slide-2.png')"></div>
+    <div class="hero-slide" style="background-image:url('images/slide-3.png')"></div>
+    <div class="hero-slide" style="background-image:url('images/slide-4.png')"></div>
+    <div class="hero-slide" style="background-image:url('images/slide-5.png')"></div>
+    <div class="hero-slide" style="background-image:url('images/slide-6.png')"></div>
+  </div>
+
+  <!-- Dark gradient overlay so text stays readable -->
+  <div class="hero-overlay"></div>
+
+  <!-- Content -->
+  <div class="container hero-content">
+
+    <div class="hero-text-col">
+      <div class="hero-tag" data-i18n="hero_tag">☀️ Serveis Solars a Catalunya</div>
+      <div class="hero-tag" style="margin-top:0.5rem;background:rgba(255,255,255,0.15);font-size:0.8rem">🧹 Neteja professional de panells solars</div>
+      <h1 class="hero-title" data-i18n="hero_title">Energia solar <em>neta i eficient</em> per a la teva llar</h1>
+      <p class="hero-desc" data-i18n="hero_desc">Instal·lació, neteja, manteniment i monitoratge de plaques solars a Catalunya. Maximitza el rendiment de la teva inversió solar.</p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-gold" data-i18n="hero_quote">Demana pressupost</a>
+        <a href="#how-it-works" class="btn btn-white" data-i18n="hero_how">Com treballem</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num" data-i18n="hero_stat1_num">500+</div>
+          <div class="hero-stat-label" data-i18n="hero_stat1_lbl">Instal·lacions</div>
+        </div>
+        <div>
+          <div class="hero-stat-num" data-i18n="hero_stat2_num">98%</div>
+          <div class="hero-stat-label" data-i18n="hero_stat2_lbl">Satisfacció</div>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dot navigation -->
+  <div class="slideshow-dots">
+    <button class="slide-dot active" data-slide="0" aria-label="Slide 1"></button>
+    <button class="slide-dot" data-slide="1" aria-label="Slide 2"></button>
+    <button class="slide-dot" data-slide="2" aria-label="Slide 3"></button>
+    <button class="slide-dot" data-slide="3" aria-label="Slide 4"></button>
+    <button class="slide-dot" data-slide="4" aria-label="Slide 5"></button>
+    <button class="slide-dot" data-slide="5" aria-label="Slide 6"></button>
+  </div>
+
+  <!-- Prev / Next arrows -->
+  <button class="slide-arrow slide-prev" aria-label="Previous">&#8249;</button>
+  <button class="slide-arrow slide-next" aria-label="Next">&#8250;</button>
+
+  <div class="scroll-hint">scroll</div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+════════════════════════════════════════ -->
+<div id="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-item">
+      <div class="trust-icon">✓</div>
+      <span data-i18n="trust1">Certificació IDAE</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🛡</div>
+      <span data-i18n="trust2">Assegurança RC 5M€</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">⭐</div>
+      <span data-i18n="trust3">Tècnics certificats</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">📋</div>
+      <span data-i18n="trust4">Garantia 25 anys panells</span>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">📷</div>
+      <span data-i18n="trust5">Informe post-servei</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="grid-2">
+
+      <div class="about-image-wrap fade-up">
+        <!-- Placeholder image - replace with real photo -->
+        <div style="height:500px;background:linear-gradient(135deg,var(--green-pale) 0%,var(--green-light) 100%);display:flex;align-items:center;justify-content:center;font-size:6rem;">🌞</div>
+        <div class="about-badge">
+          <div class="about-badge-icon">🏆</div>
+          <div>
+            <div class="about-badge-num">+10</div>
+            <div class="about-badge-label" data-i18n="about_badge">anys d'experiència</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text fade-up">
+        <span class="section-label" data-i18n="about_label">Qui som</span>
+        <p style="color:#e07b39;font-size:0.85rem;font-weight:600;margin-bottom:0.5rem">Experts en manteniment i millora d'instal·lacions solars</p>
+        <h2 data-i18n="about_title">Experts en energia solar a Catalunya des del 2013</h2>
+        <p data-i18n="about_desc1">A SolNat combinem tecnologia puntera amb un profund compromís amb el medi ambient. Oferim solucions solars integrals adaptades a cada client.</p>
+        <p data-i18n="about_desc2">Treballem amb equips d'alta qualitat i tècniques respectuoses amb l'entorn, garantint el màxim rendiment de cada instal·lació.</p>
+
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">💧</div>
+            <div>
+              <h4 data-i18n="about_f1_title">Neteja amb Aigua Delcalcificada</h4>
+              <p data-i18n="about_f1_desc">Usem aigua delcalcificada, sense productes químics.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">🏅</div>
+            <div>
+              <h4 data-i18n="about_f2_title">Instal·lació Certificada</h4>
+              <p data-i18n="about_f2_desc">Tots els tècnics estan acreditats per la Generalitat.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">📱</div>
+            <div>
+              <h4 data-i18n="about_f3_title">Monitoratge 24/7</h4>
+              <p data-i18n="about_f3_desc">Control en temps real des de l'app mòbil.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary" style="margin-top:2rem" data-i18n="about_btn">Coneix-nos millor</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+════════════════════════════════════════ -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="services-header fade-up">
+      <span class="section-label" data-i18n="srv_label">Serveis</span>
+      <h2 data-i18n="srv_title">Tot el que necessites per al teu sistema solar</h2>
+      <p data-i18n="srv_desc">Oferim una gama completa de serveis, des de la primera instal·lació fins al manteniment preventiu i la neteja professional.</p>
+    </div>
+
+    <div class="grid-3 stagger-children">
+
+      <div class="service-card">
+        <div class="service-card-img">🏠</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv1_title">Instal·lació Residencial</h3>
+          <p data-i18n="srv1_desc">Dissenyem i instal·lem sistemes solars a mida per a cases i xalets.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv1_link">Saber més →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img">🏭</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv2_title">Instal·lació Comercial</h3>
+          <p data-i18n="srv2_desc">Solucions per a empreses, naus industrials i comunitats.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv2_link">Saber més →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img">🧹</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv3_title">Neteja Professional</h3>
+          <p data-i18n="srv3_desc">Neteja amb aigua desionitzada, recuperant fins al 30% del rendiment perdut.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv3_link">Saber més →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img">🔧</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv4_title">Manteniment Preventiu</h3>
+          <p data-i18n="srv4_desc">Revisions periòdiques per garantir el màxim rendiment.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv4_link">Saber més →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img">📊</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv5_title">Monitoratge Intel·ligent</h3>
+          <p data-i18n="srv5_desc">Sistemes de control en temps real amb informes mensuals.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv5_link">Saber més →</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card-img">📝</div>
+        <div class="service-card-body">
+          <h3 data-i18n="srv6_title">Assessoria i Subvencions</h3>
+          <p data-i18n="srv6_desc">T'ajudem a sol·licitar totes les ajudes disponibles a Catalunya.</p>
+          <a href="#contact" class="service-card-link" data-i18n="srv6_link">Saber més →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════ -->
+<section id="how-it-works" class="section">
+  <div class="container">
+    <div class="how-header fade-up">
+      <span class="section-label" data-i18n="how_label">El nostre procés</span>
+      <h2 data-i18n="how_title">Com treballem</h2>
+      <p data-i18n="how_desc">Un procés senzill i transparent des del primer contacte fins al servei postvenda.</p>
+    </div>
+
+    <div class="steps stagger-children">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon">💬</div>
+        <h3 data-i18n="step1_title">Consulta gratuïta</h3>
+        <p data-i18n="step1_desc">Analitzem la teva llar i consum per dissenyar la millor solució.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon">📄</div>
+        <h3 data-i18n="step2_title">Pressupost detallat</h3>
+        <p data-i18n="step2_desc">Informe escrit amb tots els detalls, sense lletra petita.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon">⚡</div>
+        <h3 data-i18n="step3_title">Instal·lació i neteja</h3>
+        <p data-i18n="step3_desc">Tècnics certificats realitzen el treball de forma neta i segura.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-icon">📱</div>
+        <h3 data-i18n="step4_title">Informe i seguiment</h3>
+        <p data-i18n="step4_desc">Documentació completa i accés a l'app de monitoratge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CALCULATOR
+════════════════════════════════════════ -->
+<section id="calculator" class="section">
+  <div class="container">
+    <div class="calc-header fade-up">
+      <span class="section-label" data-i18n="calc_label">Calculadora Solar</span>
+      <h2 data-i18n="calc_title">Calcula el teu sistema solar ideal</h2>
+      <p data-i18n="calc_desc">Introdueix les mides de la teulada o la superfície disponible i et diem quantes plaques necessites i quant pots estalviar.</p>
+    </div>
+
+    <div class="calc-container fade-up">
+      <!-- Tabs -->
+      <div class="calc-tabs">
+        <button class="calc-tab active" data-tab="panel-roof" data-i18n="calc_tab1">🏠 Teulada</button>
+        <button class="calc-tab" data-tab="panel-ground" data-i18n="calc_tab2">🌿 Terra / Coberta plana</button>
+      </div>
+
+      <div class="calc-body">
+
+        <!-- ROOF panel -->
+        <div class="calc-panel active" id="panel-roof">
+          <div class="calc-grid">
+            <div class="form-group">
+              <label data-i18n="calc_length">Longitud (m)</label>
+              <input type="number" data-field="length" value="8" min="1" max="50" step="0.5" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="calc_width">Amplada (m)</label>
+              <input type="number" data-field="width" value="5" min="1" max="50" step="0.5" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="calc_orientation">Orientació</label>
+              <select data-field="orientation">
+                <option value="s" data-i18n-option="calc_orient_s">Sud ☀️</option>
+                <option value="se" data-i18n-option="calc_orient_se">Sud-Est</option>
+                <option value="sw" data-i18n-option="calc_orient_sw">Sud-Oest</option>
+                <option value="e" data-i18n-option="calc_orient_e">Est</option>
+                <option value="w" data-i18n-option="calc_orient_w">Oest</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="calc_shadow">Zones d'ombra</label>
+              <select data-field="shadow">
+                <option value="none" data-i18n-option="calc_shadow_no">Sense ombra</option>
+                <option value="partial" data-i18n-option="calc_shadow_some">Ombra parcial</option>
+                <option value="heavy" data-i18n-option="calc_shadow_yes">Ombra significativa</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.5rem">
+            <label data-i18n="calc_inclination">Inclinació: <span class="range-value">30°</span></label>
+            <div class="range-slider-wrap">
+              <input type="range" class="range-slider" data-field="inclination" min="0" max="60" value="30" data-unit="°" />
+              <div class="range-value">30°</div>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.5rem">
+            <label data-i18n="calc_consumption">Consum mensual (kWh): <span class="range-value">350</span></label>
+            <div class="range-slider-wrap">
+              <input type="range" class="range-slider" data-field="consumption" min="100" max="1500" value="350" step="25" data-unit=" kWh" />
+              <div class="range-value">350 kWh</div>
+            </div>
+          </div>
+          <button class="calc-btn" data-i18n="calc_btn">⚡ Calcular ara</button>
+          <div class="calc-result"></div>
+        </div>
+
+        <!-- GROUND panel -->
+        <div class="calc-panel" id="panel-ground">
+          <div class="calc-grid">
+            <div class="form-group" style="grid-column:1/-1">
+              <label data-i18n="calc_area">Superfície total (m²)</label>
+              <input type="number" data-field="area" value="40" min="4" max="5000" step="1" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="calc_orientation">Orientació</label>
+              <select data-field="orientation">
+                <option value="s" data-i18n-option="calc_orient_s">Sud ☀️</option>
+                <option value="se" data-i18n-option="calc_orient_se">Sud-Est</option>
+                <option value="sw" data-i18n-option="calc_orient_sw">Sud-Oest</option>
+                <option value="e" data-i18n-option="calc_orient_e">Est</option>
+                <option value="w" data-i18n-option="calc_orient_w">Oest</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="calc_shadow">Zones d'ombra</label>
+              <select data-field="shadow">
+                <option value="none" data-i18n-option="calc_shadow_no">Sense ombra</option>
+                <option value="partial" data-i18n-option="calc_shadow_some">Ombra parcial</option>
+                <option value="heavy" data-i18n-option="calc_shadow_yes">Ombra significativa</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.5rem">
+            <label data-i18n="calc_inclination">Inclinació:</label>
+            <div class="range-slider-wrap">
+              <input type="range" class="range-slider" data-field="inclination" min="0" max="40" value="20" data-unit="°" />
+              <div class="range-value">20°</div>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:1.5rem">
+            <label data-i18n="calc_consumption">Consum mensual (kWh):</label>
+            <div class="range-slider-wrap">
+              <input type="range" class="range-slider" data-field="consumption" min="100" max="5000" value="800" step="50" data-unit=" kWh" />
+              <div class="range-value">800 kWh</div>
+            </div>
+          </div>
+          <button class="calc-btn" data-i18n="calc_btn">⚡ Calcular ara</button>
+          <div class="calc-result"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     WHY US
+════════════════════════════════════════ -->
+<section id="why-us" class="section">
+  <div class="container">
+    <div class="why-header fade-up">
+      <span class="section-label" data-i18n="why_label">Per què SolNat</span>
+      <h2 data-i18n="why_title">Raons per confiar en nosaltres</h2>
+    </div>
+
+    <div class="grid-3 stagger-children">
+      <div class="why-card">
+        <div class="why-icon">🏅</div>
+        <h3 data-i18n="why1_title">Tècnics Certificats</h3>
+        <p data-i18n="why1_desc">Tot el personal té les acreditacions requerides per llei i formació contínua.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <h3 data-i18n="why2_title">Garantia Real</h3>
+        <p data-i18n="why2_desc">Garantia de 25 anys en panells, 10 anys en inversors i 2 anys en mà d'obra.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💧</div>
+        <h3 data-i18n="why3_title">Sense Químics</h3>
+        <p data-i18n="why3_desc">La nostra neteja usa únicament aigua desionitzada. Respectuosa amb el medi ambient.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📷</div>
+        <h3 data-i18n="why4_title">Informe Detallat</h3>
+        <p data-i18n="why4_desc">Cada servei inclou un informe fotogràfic complet i recomanacions personalitzades.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3 data-i18n="why5_title">Preu Transparent</h3>
+        <p data-i18n="why5_desc">Pressupost tancat sense sorpreses. El preu acordat és el que pagues.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h3 data-i18n="why6_title">Cobertura Catalunya</h3>
+        <p data-i18n="why6_desc">Atenem tota Catalunya amb temps de resposta inferior a 48 hores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FAQ
+════════════════════════════════════════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="faq-header fade-up">
+      <span class="section-label" data-i18n="faq_label">FAQ</span>
+      <h2 data-i18n="faq_title">Preguntes freqüents</h2>
+    </div>
+
+    <div class="faq-list fade-up">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq1_q">Amb quina freqüència he de netejar les plaques solars?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq1_a">Es recomana una neteja professional almenys una vegada a l'any.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq2_q">Quant triga una instal·lació residencial?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq2_a">Una instal·lació típica residencial es completa en 1-2 dies.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq3_q">Quines ajudes i subvencions hi ha disponibles a Catalunya?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq3_a">A Catalunya existeix el programa PREE 5000 de l'IDAE i les ajudes MOVES III.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq4_q">Es pot instal·lar en una comunitat de veïns?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq4_a">Sí, les comunitats de propietaris es beneficien enormement de les instal·lacions solars compartides.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq5_q">Quin manteniment requereix un sistema solar?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq5_a">Un sistema solar ben instal·lat requereix molt poc manteniment.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <span data-i18n="faq6_q">Com funciona el sistema de monitoratge?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a" data-i18n="faq6_a">Instal·lem un datalogger connectat a internet que envia dades en temps real.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     BLOG
+════════════════════════════════════════ -->
+<section id="blog" class="section">
+  <div class="container">
+    <div class="blog-header fade-up">
+      <div>
+        <span class="section-label" data-i18n="blog_label">Blog</span>
+        <h2 data-i18n="blog_title">Consells i novetats solar</h2>
+      </div>
+      <a href="blog/" class="btn btn-secondary" data-i18n="blog_all">Veure tots els articles</a>
+    </div>
+
+    <div class="grid-3 stagger-children">
+
+      <article class="blog-card">
+        <div class="blog-card-img">🧹</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog1_tag">Manteniment</span>
+          <h3 data-i18n="blog1_title">Per què netejar les plaques cada any: l'impacte real en el rendiment</h3>
+          <p data-i18n="blog1_desc">Estudis mostren que les plaques netes produeixen fins al 30% més d'energia.</p>
+          <div class="blog-meta">
+            <span>📅</span>
+            <span data-i18n="blog_date1">12 mar 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-img">💶</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog2_tag">Subvencions</span>
+          <h3 data-i18n="blog2_title">Guia completa d'ajudes solars a Catalunya per al 2025</h3>
+          <p data-i18n="blog2_desc">IDAE, PREE, MOVES III i bonificacions municipals: totes les opcions.</p>
+          <div class="blog-meta">
+            <span>📅</span>
+            <span data-i18n="blog_date2">28 feb 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-img">⚙️</div>
+        <div class="blog-card-body">
+          <span class="blog-tag" data-i18n="blog3_tag">Tecnologia</span>
+          <h3 data-i18n="blog3_title">Panells bifacials: val la pena la inversió extra?</h3>
+          <p data-i18n="blog3_desc">Analitzem els avantatges dels panells bifacials i en quines situacions compensa.</p>
+          <div class="blog-meta">
+            <span>📅</span>
+            <span data-i18n="blog_date3">14 feb 2025</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container contact-inner">
+
+    <div class="contact-info">
+      <span class="section-label" data-i18n="contact_label">Contacte</span>
+      <h2 data-i18n="contact_title">Parlem del teu projecte solar</h2>
+      <p data-i18n="contact_desc">Ompliu el formulari i us contactarem en menys de 24 hores amb un pressupost personalitzat i sense compromís.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <span data-i18n="contact_phone">+34 93 XXX XX XX</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉️</div>
+          <span data-i18n="contact_email">hola@solnat.cat</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <span data-i18n="contact_address">Igualada, Catalunya</span>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕐</div>
+          <span data-i18n="contact_hours">Dl-Dv: 8h – 19h</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3 data-i18n="form_title">Sol·licita pressupost gratuït</h3>
+
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="form_name">Nom complet</label>
+            <input type="text" required placeholder="Joan García" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="form_phone">Telèfon</label>
+            <input type="tel" required placeholder="6XX XXX XXX" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_email">Correu electrònic</label>
+          <input type="email" required placeholder="joan@exemple.com" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_service">Servei d'interès</label>
+          <select>
+            <option data-i18n-option="form_srv_clean">Neteja</option>
+            <option data-i18n-option="form_srv_maint">Manteniment</option>
+            <option data-i18n-option="form_srv_amp">Ampliació</option>
+            <option data-i18n-option="form_srv_rep">Reparació</option>
+            <option data-i18n-option="form_srv_other">Altres</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_message">Explica'ns el teu cas</label>
+          <textarea placeholder="Tenim una casa a Igualada amb teulada orientada al sud..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="form_submit">📩 Enviar sol·licitud</button>
+      </form>
+
+      <div class="form-success">
+        <div class="check">✅</div>
+        <h3 class="ok-title">¡Missatge rebut!</h3>
+        <p class="ok-desc">Us contactarem en menys de 24 hores.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:white;margin-bottom:1rem">
+          <div class="logo-icon">🌿</div>
+          Sol<span style="color:var(--green-soft)">Nat</span>
+        </div>
+        <p data-i18n="footer_desc">Experts en energia solar a Catalunya. Instal·lació, neteja i manteniment professional.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav">Navegació</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav_aboutus">Qui som</a></li>
+          <li><a href="#how-it-works" data-i18n="nav_how">Com treballem</a></li>
+          <li><a href="#calculator" data-i18n="calc_label">Calculadora</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Preguntes Freqüents</a></li>
+          <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_services">Serveis</h4>
+        <ul>
+          <li><a href="#services" data-i18n="nav_residential">Solar Residencial</a></li>
+          <li><a href="#services" data-i18n="nav_commercial">Solar Comercial</a></li>
+          <li><a href="#services" data-i18n="nav_maintenance">Manteniment</a></li>
+          <li><a href="#services" data-i18n="nav_cleaning">Neteja de Plaques</a></li>
+          <li><a href="#services" data-i18n="nav_monitoring">Monitoratge</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_newsletter_title">Butlletí</h4>
+        <p style="font-size:0.82rem;margin-bottom:1rem" data-i18n="footer_desc">Rep consells i novetats sobre energia solar.</p>
+        <form class="footer-newsletter newsletter-form">
+          <input type="email" data-i18n="footer_newsletter_placeholder" placeholder="El teu email" />
+          <button type="submit" class="btn btn-primary" data-i18n="footer_newsletter_btn">Subscriure'm</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2025 SolNat. Tots els drets reservats.</span>
+      <div class="footer-links">
+        <a href="pages/ca/privacitat.html" data-i18n="footer_privacy">Política de privacitat</a>
+        <a href="pages/ca/avis-legal.html" data-i18n="footer_terms">Avís legal</a>
+        <a href="pages/ca/cookies.html" data-i18n="footer_cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
