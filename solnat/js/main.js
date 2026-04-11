@@ -261,7 +261,7 @@ const translations = {
     about_f2_title:'Instalación Certificada',
     about_f2_desc: 'Todos los técnicos están acreditados por la Generalitat de Catalunya.',
     about_f3_title:'Revisión Anual del Estado',
-    about_f3_desc: 'Inspección anual completa para asegurar el perfecto funcionamiento de tu instalación solar.'
+    about_f3_desc: 'Inspección anual completa para asegurar el perfecto funcionamiento de tu instalación solar.',
     about_badge:   'años de experiencia',
     about_btn:     'Conócenos mejor',
 
