@@ -52,8 +52,8 @@ const translations = {
     about_f1_desc: 'Usem aigua delcalcificada, sense productes químics. Zero residus, zero ratllades.',
     about_f2_title:'Instal·lació Certificada',
     about_f2_desc: 'Tots els tècnics estan acreditats per la Generalitat de Catalunya.',
-    about_f3_title:'Monitoratge 24/7',
-    about_f3_desc: 'Control en temps real del rendiment de les teves plaques des de l\'app.',
+    about_f3_title:'Revisió Anual del Estat',
+    about_f3_desc: 'Inspecció anual completa per assegurar el perfecte funcionament de la teva instal·lació solar.',
     about_badge:   'anys d\'experiència',
     about_btn:     'Coneix-nos millor',
 
@@ -260,8 +260,8 @@ const translations = {
     about_f1_desc: 'Usamos agua descalcificada, sin productos químicos.',
     about_f2_title:'Instalación Certificada',
     about_f2_desc: 'Todos los técnicos están acreditados por la Generalitat de Catalunya.',
-    about_f3_title:'Monitorización 24/7',
-    about_f3_desc: 'Control en tiempo real del rendimiento de tus paneles desde la app.',
+    about_f3_title:'Revisión Anual del Estado',
+    about_f3_desc: 'Inspección anual completa para asegurar el perfecto funcionamiento de tu instalación solar.'
     about_badge:   'años de experiencia',
     about_btn:     'Conócenos mejor',
 
