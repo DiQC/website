@@ -150,6 +150,31 @@ p  { font-size: 1rem; color: var(--text-mid); }
   padding: 0.8rem 0;
 }
 
+/* Transparent state — over hero image */
+#navbar:not(.scrolled) .nav-logo {
+  color: white;
+}
+#navbar:not(.scrolled) .nav-links a {
+  color: rgba(255,255,255,0.88);
+}
+#navbar:not(.scrolled) .nav-links a:hover {
+  color: white;
+}
+#navbar:not(.scrolled) .lang-toggle {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+}
+#navbar:not(.scrolled) .lang-btn {
+  color: rgba(255,255,255,0.8);
+}
+#navbar:not(.scrolled) .lang-btn.active {
+  background: rgba(255,255,255,0.22);
+  color: white;
+}
+#navbar:not(.scrolled) .hamburger span {
+  background: white;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -385,6 +410,14 @@ p  { font-size: 1rem; color: var(--text-mid); }
   max-width: 660px;
 }
 
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
 .hero-tag {
   display: inline-flex;
   align-items: center;
@@ -398,7 +431,6 @@ p  { font-size: 1rem; color: var(--text-mid); }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--green-soft);
-  margin-bottom: 1.5rem;
 }
 
 .hero-title {
