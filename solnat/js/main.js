@@ -206,7 +206,7 @@ const translations = {
     footer_newsletter_title: 'Butlletí',
     footer_newsletter_placeholder: 'El teu email',
     footer_newsletter_btn: 'Subscriure\'m',
-    footer_copy:    '© 2025 SolNat. Tots els drets reservats.',
+    footer_copy:    '© 2026 SolNat. Tots els drets reservats.',
     footer_privacy: 'Política de privacitat',
     footer_terms:   'Avís legal',
     footer_cookies: 'Cookies',
@@ -414,7 +414,7 @@ const translations = {
     footer_newsletter_title: 'Boletín',
     footer_newsletter_placeholder: 'Tu email',
     footer_newsletter_btn: 'Suscribirme',
-    footer_copy:    '© 2025 SolNat. Todos los derechos reservados.',
+    footer_copy:    '© 2026 SolNat. Todos los derechos reservados.',
     footer_privacy: 'Política de privacidad',
     footer_terms:   'Aviso legal',
     footer_cookies: 'Cookies',
@@ -578,7 +578,7 @@ function calculateSolar(area, orientation, inclination, consumption, shadow, mod
     savings:   annualSavings.toLocaleString(),
     area:      Math.round(numPanels * panelArea),
     co2:       co2Avoided.toLocaleString(),
-    roi:       roiYears.toFixed(1) + ' anys'
+    roi:       roiYears.toFixed(1) + (currentLang === 'es' ? ' años' : ' anys')
   };
 }
 

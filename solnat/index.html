@@ -8,10 +8,13 @@
   <meta property="og:title" content="SolNat – Energia Solar a Catalunya" />
   <meta property="og:description" content="Experts en energia solar. Instal·lació, neteja i manteniment professional a tota Catalunya." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://solnat.cat/" />
   <title>SolNat – Energia Solar a Catalunya</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -121,7 +124,10 @@
           <div class="hero-stat-num" data-i18n="hero_stat2_num">98%</div>
           <div class="hero-stat-label" data-i18n="hero_stat2_lbl">Satisfacció</div>
         </div>
-        
+        <div>
+          <div class="hero-stat-num" data-i18n="hero_stat3_num">10+</div>
+          <div class="hero-stat-label" data-i18n="hero_stat3_lbl">Anys d'experiència</div>
+        </div>
       </div>
     </div>
 
@@ -670,21 +676,22 @@
       <form id="contactForm">
         <div class="form-row">
           <div class="form-group">
-            <label data-i18n="form_name">Nom complet</label>
-            <input type="text" required placeholder="Joan García" />
+            <label for="form-name" data-i18n="form_name">Nom complet</label>
+            <input id="form-name" name="name" type="text" required placeholder="Joan García" />
           </div>
           <div class="form-group">
-            <label data-i18n="form_phone">Telèfon</label>
-            <input type="tel" required placeholder="6XX XXX XXX" />
+            <label for="form-phone" data-i18n="form_phone">Telèfon</label>
+            <input id="form-phone" name="phone" type="tel" required placeholder="6XX XXX XXX" />
           </div>
         </div>
         <div class="form-group">
-          <label data-i18n="form_email">Correu electrònic</label>
-          <input type="email" required placeholder="joan@exemple.com" />
+          <label for="form-email" data-i18n="form_email">Correu electrònic</label>
+          <input id="form-email" name="email" type="email" required placeholder="joan@exemple.com" />
         </div>
         <div class="form-group">
-          <label data-i18n="form_service">Servei d'interès</label>
-          <select>
+          <label for="form-service" data-i18n="form_service">Servei d'interès</label>
+          <select id="form-service" name="service">
+            <option data-i18n-option="form_srv_inst">Instal·lació</option>
             <option data-i18n-option="form_srv_clean">Neteja</option>
             <option data-i18n-option="form_srv_maint">Manteniment</option>
             <option data-i18n-option="form_srv_amp">Ampliació</option>
@@ -693,8 +700,8 @@
           </select>
         </div>
         <div class="form-group">
-          <label data-i18n="form_message">Explica'ns el teu cas</label>
-          <textarea placeholder="Tenim una casa a Igualada amb teulada orientada al sud..."></textarea>
+          <label for="form-message" data-i18n="form_message">Explica'ns el teu cas</label>
+          <textarea id="form-message" name="message" placeholder="Tenim una casa a Igualada amb teulada orientada al sud..."></textarea>
         </div>
         <button type="submit" class="btn btn-primary" data-i18n="form_submit">📩 Enviar sol·licitud</button>
       </form>

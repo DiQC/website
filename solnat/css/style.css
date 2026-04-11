@@ -3,8 +3,6 @@
    Natural & Eco-Friendly Design System
    ========================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
-
 /* --- CSS Variables --- */
 :root {
   --green-deep:    #1a3a2a;
@@ -1282,6 +1280,8 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .stagger-children.visible > *:nth-child(2) { opacity: 1; transform: none; transition: all 0.5s ease 0.2s; }
 .stagger-children.visible > *:nth-child(3) { opacity: 1; transform: none; transition: all 0.5s ease 0.3s; }
 .stagger-children.visible > *:nth-child(4) { opacity: 1; transform: none; transition: all 0.5s ease 0.4s; }
+.stagger-children.visible > *:nth-child(5) { opacity: 1; transform: none; transition: all 0.5s ease 0.5s; }
+.stagger-children.visible > *:nth-child(6) { opacity: 1; transform: none; transition: all 0.5s ease 0.6s; }
 
 /* =========================================
    RESPONSIVE
