@@ -211,8 +211,11 @@ const translations = {
     footer_terms:   'Avís legal',
     footer_cookies: 'Cookies',
 
+    // Jobs page
+    back_btn: '← Tornar a l\'inici',
+
     // Jobs
-    jobs_nav:            'Treballa amb nosaltres',
+    jobs_nav:
     jobs_label:          'Uneix-te a l\'equip',
     jobs_title:          'Treballa amb nosaltres',
     jobs_intro:          'A SolNat busquem persones responsables, compromeses i amb ganes de treballar en el sector de la neteja i manteniment de plaques solars per a particulars i empreses.',
@@ -499,6 +502,9 @@ const translations = {
     footer_privacy: 'Política de privacidad',
     footer_terms:   'Aviso legal',
     footer_cookies: 'Cookies',
+
+    // Jobs page
+    back_btn: '← Volver al inicio',
 
     // Jobs
     jobs_nav:            'Trabaja con nosotros',

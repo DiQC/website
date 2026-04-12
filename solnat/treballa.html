@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SolNat – Treballa amb nosaltres. Ofertes de feina en neteja i manteniment de plaques solars a Catalunya." />
+  <meta property="og:title" content="Treballa amb nosaltres – SolNat" />
+  <meta property="og:description" content="Uneix-te a l'equip SolNat. Busquem perfils per a neteja tècnica i manteniment de plaques solars." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://solnat.cat/treballa.html" />
+  <title>Treballa amb nosaltres – SolNat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🌿</div>
+      Sol<span>Nat</span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="index.html#services" data-i18n="nav_services">Serveis ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#services" data-i18n="nav_residential">Solar Residencial</a></li>
+          <li><a href="index.html#services" data-i18n="nav_commercial">Solar Comercial</a></li>
+          <li><a href="index.html#services" data-i18n="nav_maintenance">Manteniment</a></li>
+          <li><a href="index.html#services" data-i18n="nav_cleaning">Neteja de Plaques</a></li>
+          <li><a href="index.html#services" data-i18n="nav_monitoring">Monitoratge</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="index.html#about" data-i18n="nav_about">Nosaltres ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#about" data-i18n="nav_aboutus">Qui som</a></li>
+          <li><a href="index.html#faq" data-i18n="nav_faq">Preguntes Freqüents</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#how-it-works" data-i18n="nav_how">Com treballem</a></li>
+      <li><a href="blog/" data-i18n="nav_blog">Blog</a></li>
+      <li><a href="treballa.html" class="nav-active" data-i18n="jobs_nav">Treballa amb nosaltres</a></li>
+      <li><a href="index.html#contact" data-i18n="nav_contact">Contacte</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ca">CA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <a href="index.html#contact" class="btn btn-primary nav-cta" data-i18n="nav_quote">Demana pressupost</a>
+      <button class="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <a href="index.html#services" data-i18n="nav_services">Serveis</a>
+  <div class="mobile-sub">
+    <a href="index.html#services" data-i18n="nav_residential">Solar Residencial</a>
+    <a href="index.html#services" data-i18n="nav_commercial">Solar Comercial</a>
+    <a href="index.html#services" data-i18n="nav_maintenance">Manteniment</a>
+    <a href="index.html#services" data-i18n="nav_cleaning">Neteja</a>
+  </div>
+  <a href="index.html#about" data-i18n="nav_about">Nosaltres</a>
+  <a href="index.html#how-it-works" data-i18n="nav_how">Com treballem</a>
+  <a href="blog/" data-i18n="nav_blog">Blog</a>
+  <a href="treballa.html" data-i18n="jobs_nav">Treballa amb nosaltres</a>
+  <a href="index.html#contact" class="btn btn-primary" style="text-align:center;margin-top:1rem" data-i18n="nav_quote">Demana pressupost</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <a href="index.html" class="back-link" data-i18n="back_btn">← Tornar a l'inici</a>
+    <span class="section-label" data-i18n="jobs_label">Uneix-te a l'equip</span>
+    <h1 data-i18n="jobs_title">Treballa amb nosaltres</h1>
+    <p data-i18n="jobs_intro">A SolNat busquem persones responsables, compromeses i amb ganes de treballar en el sector de la neteja i manteniment de plaques solars per a particulars i empreses.</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     JOBS CONTENT
+════════════════════════════════════════ -->
+<section class="section" style="background:var(--off-white)">
+  <div class="container">
+    <div class="jobs-layout">
+
+      <!-- ── Left: job description ── -->
+      <div class="jobs-description fade-up">
+
+        <div class="jobs-block">
+          <h3 data-i18n="jobs_seek_title">Què busquem</h3>
+          <p data-i18n="jobs_seek_desc">Perfils per a tasques de neteja tècnica, revisió visual, manteniment preventiu i suport en treballs sobre cobertes i instal·lacions solars.</p>
+        </div>
+
+        <div class="jobs-block">
+          <h4 class="jobs-block-heading" data-i18n="jobs_req_title">Requisits essencials per al lloc</h4>
+          <ul class="jobs-list">
+            <li data-i18n="jobs_req1">Responsabilitat, serietat i bona actitud</li>
+            <li data-i18n="jobs_req2">Capacitat per treballar en equip</li>
+            <li data-i18n="jobs_req3">Compromís amb la seguretat i la feina ben feta</li>
+            <li data-i18n="jobs_req4">Bona condició física per a tasques operatives</li>
+            <li data-i18n="jobs_req5">Disponibilitat per desplaçar-se a instal·lacions de clients</li>
+            <li data-i18n="jobs_req6">Permís de conduir B</li>
+            <li data-i18n="jobs_req7">No tenir limitacions per fer treballs en alçada, quan el lloc ho requereixi</li>
+          </ul>
+        </div>
+
+        <div class="jobs-block">
+          <h4 class="jobs-block-heading" data-i18n="jobs_val_title">Es valorarà especialment</h4>
+          <ul class="jobs-list jobs-list--valued">
+            <li data-i18n="jobs_val1">Experiència en neteja de plaques solars</li>
+            <li data-i18n="jobs_val2">Experiència en manteniment preventiu o feines similars</li>
+            <li data-i18n="jobs_val3">Experiència en cobertes, treballs en alçada o entorns tècnics</li>
+            <li data-i18n="jobs_val4">Tracte professional amb clients particulars i empreses</li>
+            <li data-i18n="jobs_val5">Capacitat per detectar incidències bàsiques i comunicar correctament l'estat de la instal·lació</li>
+          </ul>
+        </div>
+
+        <div class="jobs-block">
+          <h4 class="jobs-block-heading" data-i18n="jobs_training_title">Títols, cursos i formació que es valoraran</h4>
+          <ul class="jobs-list">
+            <li data-i18n="jobs_training1">Formació en treballs en alçada</li>
+            <li data-i18n="jobs_training2">Formació en PRL / Prevenció de Riscos Laborals</li>
+            <li data-i18n="jobs_training3">Formació en risc elèctric</li>
+            <li data-i18n="jobs_training4">Formació en plataformes elevadores (PEMP)</li>
+            <li data-i18n="jobs_training5">Formació o experiència en instal·lacions solars fotovoltaiques</li>
+            <li data-i18n="jobs_training6">Certificat professional de muntatge i manteniment d'instal·lacions solars fotovoltaiques</li>
+            <li data-i18n="jobs_training7">FP d'Instal·lacions Elèctriques i Automàtiques</li>
+            <li data-i18n="jobs_training8">FP d'Energies Renovables</li>
+            <li data-i18n="jobs_training9">Coneixements d'electricitat, manteniment o instal·lacions tècniques</li>
+          </ul>
+        </div>
+
+        <div class="jobs-block">
+          <h4 class="jobs-block-heading" data-i18n="jobs_offer_title">Què oferim</h4>
+          <div class="jobs-offer-grid">
+            <div class="jobs-offer-card">
+              <div class="jobs-offer-icon">📈</div>
+              <span data-i18n="jobs_offer1">Incorporació a un sector amb gran projecció</span>
+            </div>
+            <div class="jobs-offer-card">
+              <div class="jobs-offer-icon">📚</div>
+              <span data-i18n="jobs_offer2">Formació i aprenentatge continu</span>
+            </div>
+            <div class="jobs-offer-card">
+              <div class="jobs-offer-icon">🤝</div>
+              <span data-i18n="jobs_offer3">Bon ambient de treball</span>
+            </div>
+            <div class="jobs-offer-card">
+              <div class="jobs-offer-icon">🚀</div>
+              <span data-i18n="jobs_offer4">Possibilitats de creixement dins de l'empresa</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Right: application form ── -->
+      <div class="jobs-form-wrap fade-up">
+        <div class="jobs-form-inner">
+          <h3 data-i18n="jobs_form_title">Formulari de candidatura</h3>
+
+          <form id="jobsForm" novalidate>
+
+            <!-- Dades personals -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_personal">Dades personals</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="j-name" data-i18n="jobs_form_fullname">Nom i cognoms</label>
+                  <input id="j-name" name="fullname" type="text" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="j-phone" data-i18n="jobs_form_phone">Telèfon</label>
+                  <input id="j-phone" name="phone" type="tel" required autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="j-email" data-i18n="jobs_form_email">Correu electrònic</label>
+                <input id="j-email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="j-location" data-i18n="jobs_form_location">Població / zona de residència</label>
+                <input id="j-location" name="location" type="text" autocomplete="address-level2" />
+              </div>
+            </div>
+
+            <!-- Sobre el perfil -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_profile">Sobre el teu perfil</h4>
+              <div class="form-group">
+                <label for="j-position" data-i18n="jobs_form_position">Lloc al qual optes</label>
+                <select id="j-position" name="position">
+                  <option value="cleaning" data-i18n-option="jobs_pos_cleaning">Neteja de plaques solars</option>
+                  <option value="maintenance" data-i18n-option="jobs_pos_maint">Manteniment preventiu</option>
+                  <option value="height" data-i18n-option="jobs_pos_height">Treballs en alçada / cobertes</option>
+                  <option value="other" data-i18n-option="jobs_pos_other">Altres</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="j-exp" data-i18n="jobs_form_exp_years">Anys d'experiència</label>
+                  <select id="j-exp" name="exp_years">
+                    <option value="0" data-i18n-option="jobs_exp_none">Sense experiència</option>
+                    <option value="1" data-i18n-option="jobs_exp_1">Menys d'1 any</option>
+                    <option value="2" data-i18n-option="jobs_exp_2">1–3 anys</option>
+                    <option value="3" data-i18n-option="jobs_exp_3">3–5 anys</option>
+                    <option value="4" data-i18n-option="jobs_exp_4">Més de 5 anys</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="j-startdate" data-i18n="jobs_form_startdate">Data d'incorporació</label>
+                  <input id="j-startdate" name="startdate" type="date" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label data-i18n="jobs_form_license">Permís de conduir B</label>
+                  <div class="radio-group">
+                    <label class="radio-label">
+                      <input type="radio" name="license" value="yes" />
+                      <span data-i18n="jobs_form_yes">Sí</span>
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="license" value="no" />
+                      <span data-i18n="jobs_form_no">No</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="jobs_form_travel">Disponibilitat per a desplaçaments</label>
+                  <div class="radio-group">
+                    <label class="radio-label">
+                      <input type="radio" name="travel" value="yes" />
+                      <span data-i18n="jobs_form_yes">Sí</span>
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="travel" value="no" />
+                      <span data-i18n="jobs_form_no">No</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiència i formació -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_exptraining">Experiència i formació</h4>
+              <div class="checkbox-grid">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="exp_solar" />
+                  <span data-i18n="jobs_form_exp_solar">Experiència en neteja de plaques solars</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="exp_maint" />
+                  <span data-i18n="jobs_form_exp_maint">Experiència en manteniment o feines similars</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="exp_height" />
+                  <span data-i18n="jobs_form_exp_height">Experiència en treballs en alçada o cobertes</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="tr_prl" />
+                  <span data-i18n="jobs_form_tr_prl">Formació en PRL</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="tr_height" />
+                  <span data-i18n="jobs_form_tr_height">Formació en treballs en alçada</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="tr_electric" />
+                  <span data-i18n="jobs_form_tr_electric">Formació en risc elèctric</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="tr_solar" />
+                  <span data-i18n="jobs_form_tr_solar">Formació en fotovoltaica</span>
+                </label>
+              </div>
+              <div class="form-group" style="margin-top:0.85rem">
+                <label for="j-other-skills" data-i18n="jobs_form_other_skills">Altres coneixements tècnics</label>
+                <input id="j-other-skills" name="other_skills" type="text" />
+              </div>
+            </div>
+
+            <!-- Adjunts -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_attachments">Adjunts</h4>
+              <div class="form-group">
+                <label for="j-cv" data-i18n="jobs_form_cv">Currículum vitae (PDF, DOC)</label>
+                <input id="j-cv" name="cv" type="file" accept=".pdf,.doc,.docx" class="file-input" />
+              </div>
+              <div class="form-group">
+                <label for="j-certs" data-i18n="jobs_form_certs">Certificats o documentació addicional</label>
+                <input id="j-certs" name="certs" type="file" accept=".pdf,.jpg,.jpeg,.png" class="file-input" multiple />
+              </div>
+            </div>
+
+            <!-- Enllaços -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_links">Enllaços</h4>
+              <div class="form-group">
+                <label for="j-linkedin" data-i18n="jobs_form_linkedin">Perfil de LinkedIn</label>
+                <input id="j-linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/..." />
+              </div>
+              <div class="form-group">
+                <label for="j-other-links" data-i18n="jobs_form_other_links">Altres enllaços d'interès</label>
+                <input id="j-other-links" name="other_links" type="url" />
+              </div>
+            </div>
+
+            <!-- Missatge -->
+            <div class="jobs-form-section">
+              <h4 class="jobs-form-section-title" data-i18n="jobs_form_message_section">Missatge</h4>
+              <div class="form-group">
+                <label for="j-message" data-i18n="jobs_form_message">Explica'ns breument la teva experiència o per què t'interessa treballar amb nosaltres</label>
+                <textarea id="j-message" name="message" rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i18n="jobs_form_submit">📩 Enviar candidatura</button>
+
+          </form>
+
+          <div class="form-success" id="jobsFormSuccess">
+            <div class="check">✅</div>
+            <h3 class="ok-title" data-i18n="jobs_form_ok_title">Candidatura rebuda!</h3>
+            <p class="ok-desc" data-i18n="jobs_form_ok_desc">Gràcies per l'interès. Revisarem el teu perfil i ens posarem en contacte.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:white;margin-bottom:1rem">
+          <div class="logo-icon">🌿</div>
+          Sol<span style="color:var(--green-soft)">Nat</span>
+        </div>
+        <p data-i18n="footer_desc">Experts en energia solar a Catalunya. Instal·lació, neteja i manteniment professional.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav">Navegació</h4>
+        <ul>
+          <li><a href="index.html#about" data-i18n="nav_aboutus">Qui som</a></li>
+          <li><a href="index.html#how-it-works" data-i18n="nav_how">Com treballem</a></li>
+          <li><a href="index.html#calculator" data-i18n="calc_label">Calculadora</a></li>
+          <li><a href="index.html#faq" data-i18n="nav_faq">Preguntes Freqüents</a></li>
+          <li><a href="blog/" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="treballa.html" data-i18n="jobs_nav">Treballa amb nosaltres</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_services">Serveis</h4>
+        <ul>
+          <li><a href="index.html#services" data-i18n="nav_residential">Solar Residencial</a></li>
+          <li><a href="index.html#services" data-i18n="nav_commercial">Solar Comercial</a></li>
+          <li><a href="index.html#services" data-i18n="nav_maintenance">Manteniment</a></li>
+          <li><a href="index.html#services" data-i18n="nav_cleaning">Neteja de Plaques</a></li>
+          <li><a href="index.html#services" data-i18n="nav_monitoring">Monitoratge</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_newsletter_title">Butlletí</h4>
+        <p style="font-size:0.82rem;margin-bottom:1rem" data-i18n="footer_desc">Rep consells i novetats sobre energia solar.</p>
+        <form class="footer-newsletter newsletter-form">
+          <input type="email" data-i18n="footer_newsletter_placeholder" placeholder="El teu email" />
+          <button type="submit" class="btn btn-primary" data-i18n="footer_newsletter_btn">Subscriure'm</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2026 SolNat. Tots els drets reservats.</span>
+      <div class="footer-links">
+        <a href="pages/ca/privacitat.html" data-i18n="footer_privacy">Política de privacitat</a>
+        <a href="pages/ca/avis-legal.html" data-i18n="footer_terms">Avís legal</a>
+        <a href="pages/ca/cookies.html" data-i18n="footer_cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

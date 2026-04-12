@@ -1300,6 +1300,53 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .footer-links a:hover { color: var(--green-soft); }
 
 /* =========================================
+   PAGE HERO (inner pages like treballa.html)
+   ========================================= */
+.page-hero {
+  background: var(--green-deep);
+  padding: 8rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(82,183,136,0.12) 0%, transparent 65%);
+}
+.page-hero .container { position: relative; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 1.75rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.back-link:hover { color: var(--green-soft); gap: 0.2rem; }
+
+.page-hero .section-label { color: var(--green-soft); }
+.page-hero h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+.page-hero p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  max-width: 640px;
+  line-height: 1.75;
+}
+
+/* Active nav item for current page */
+.nav-active { color: var(--green-soft) !important; }
+.nav-active::after { width: 100% !important; }
+
+/* =========================================
    JOBS / TREBALLA AMB NOSALTRES
    ========================================= */
 #jobs {
