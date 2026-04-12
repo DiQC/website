@@ -139,7 +139,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 1.2rem 0;
+  padding: 0.6rem 0;
   transition: var(--transition);
 }
 
@@ -147,7 +147,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   background: rgba(253,250,246,0.97);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
-  padding: 0.8rem 0;
+  padding: 0.4rem 0;
 }
 
 /* Transparent state — over hero image */
@@ -207,14 +207,13 @@ p  { font-size: 1rem; color: var(--text-mid); }
 
 /* Logo image */
 .logo-img {
-  height: 44px;
+  height: 72px;
   width: auto;
   display: block;
-  border-radius: 6px;
   object-fit: contain;
 }
 .logo-img--footer {
-  height: 52px;
+  height: 80px;
   margin-bottom: 1rem;
 }
 .footer-logo-link { display: inline-block; }
