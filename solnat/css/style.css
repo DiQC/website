@@ -1300,6 +1300,234 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .footer-links a:hover { color: var(--green-soft); }
 
 /* =========================================
+   JOBS / TREBALLA AMB NOSALTRES
+   ========================================= */
+#jobs {
+  background: var(--off-white);
+}
+
+.jobs-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 4rem;
+}
+.jobs-header h2 { color: var(--green-deep); margin-bottom: 1rem; }
+.jobs-header p  { font-size: 1.05rem; }
+
+.jobs-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* --- Description side --- */
+.jobs-block { margin-bottom: 2rem; }
+.jobs-block:last-child { margin-bottom: 0; }
+.jobs-block h3 {
+  color: var(--green-deep);
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+.jobs-block p { font-size: 0.95rem; }
+
+.jobs-block-heading {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 0.75rem;
+}
+
+.jobs-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.jobs-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.jobs-list li::before {
+  content: '✓';
+  color: var(--green-soft);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05em;
+}
+.jobs-list--valued li::before {
+  content: '★';
+  color: var(--gold);
+}
+
+.jobs-offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.jobs-offer-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--green-light);
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  font-weight: 500;
+  transition: var(--transition);
+}
+.jobs-offer-card:hover {
+  border-color: var(--green-soft);
+  box-shadow: var(--shadow-sm);
+}
+.jobs-offer-icon { font-size: 1.25rem; flex-shrink: 0; }
+
+/* --- Form side --- */
+.jobs-form-inner {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+.jobs-form-inner > h3 {
+  color: var(--green-deep);
+  margin-bottom: 1.75rem;
+  font-size: 1.2rem;
+}
+
+.jobs-form-section {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--green-pale);
+}
+.jobs-form-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+
+.jobs-form-section-title {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green-soft);
+  margin-bottom: 1rem;
+}
+
+.jobs-form-inner .form-group { margin-bottom: 0.85rem; }
+.jobs-form-inner .form-group label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+.jobs-form-inner .form-group input,
+.jobs-form-inner .form-group select,
+.jobs-form-inner .form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--green-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  transition: var(--transition);
+  background: var(--off-white);
+}
+.jobs-form-inner .form-group input:focus,
+.jobs-form-inner .form-group select:focus,
+.jobs-form-inner .form-group textarea:focus {
+  outline: none;
+  border-color: var(--green-soft);
+  background: white;
+}
+.jobs-form-inner .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* File input */
+.file-input { padding: 0.5rem 1rem !important; cursor: pointer; }
+.file-input::-webkit-file-upload-button {
+  background: var(--green-pale);
+  border: 1px solid var(--green-light);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--green-deep);
+  margin-right: 0.5rem;
+  transition: var(--transition);
+}
+.file-input::-webkit-file-upload-button:hover { background: var(--green-light); }
+.file-input::file-selector-button {
+  background: var(--green-pale);
+  border: 1px solid var(--green-light);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.85rem;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--green-deep);
+  margin-right: 0.5rem;
+  transition: var(--transition);
+}
+.file-input::file-selector-button:hover { background: var(--green-light); }
+
+/* Radio buttons */
+.radio-group { display: flex; gap: 1.5rem; margin-top: 0.3rem; }
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+}
+.radio-label input[type="radio"] {
+  width: auto !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  accent-color: var(--green-mid);
+}
+
+/* Checkboxes */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-mid);
+  line-height: 1.4;
+}
+.checkbox-label input[type="checkbox"] {
+  flex-shrink: 0;
+  margin-top: 0.15em;
+  accent-color: var(--green-mid);
+  width: 16px;
+  height: 16px;
+}
+
+/* =========================================
    ANIMATIONS
    ========================================= */
 .fade-up {
@@ -1338,6 +1566,9 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .steps  { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .jobs-layout    { grid-template-columns: 1fr; gap: 3rem; }
+  .jobs-offer-grid { grid-template-columns: 1fr; }
+  .checkbox-grid  { grid-template-columns: 1fr; }
   .footer-grid   { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .hero-stats  { gap: 1.5rem; flex-wrap: wrap; }
