@@ -218,7 +218,8 @@ p  { font-size: 1rem; color: var(--text-mid); }
   transition: var(--transition);
   position: relative;
 }
-.nav-links a::after {
+/* Underline accent for regular nav links */
+.nav-links li:not(.nav-dropdown) a::after {
   content: '';
   position: absolute;
   bottom: -4px; left: 0;
@@ -226,10 +227,21 @@ p  { font-size: 1rem; color: var(--text-mid); }
   background: var(--green-soft);
   transition: var(--transition);
 }
-.nav-links a:hover { color: var(--green-deep); }
-.nav-links a:hover::after { width: 100%; }
+.nav-links li:not(.nav-dropdown) a:hover::after { width: 100%; }
 
-/* Dropdown */
+/* Dropdown chevron via CSS only — no raw text chars needed in HTML */
+.nav-dropdown > a::after {
+  content: ' \25be';
+  font-size: 0.75em;
+  opacity: 0.55;
+  position: static;
+  width: auto; height: auto;
+  background: none;
+  transition: none;
+  bottom: auto;
+}
+
+.nav-links a:hover { color: var(--green-deep); }
 .nav-dropdown { position: relative; }
 .dropdown-menu {
   position: absolute;
