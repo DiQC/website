@@ -139,7 +139,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 0.6rem 0;
+  padding: 0.75rem 0;
   transition: var(--transition);
 }
 
@@ -147,13 +147,10 @@ p  { font-size: 1rem; color: var(--text-mid); }
   background: rgba(253,250,246,0.97);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
 }
 
 /* Transparent state — over hero image */
-#navbar:not(.scrolled) .nav-logo {
-  color: white;
-}
 #navbar:not(.scrolled) .nav-links a {
   color: rgba(255,255,255,0.88);
 }
@@ -178,18 +175,21 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
+  /* Leave space on the left for the independent logo */
+  padding-left: 200px;
 }
 
+/* Logo — sits independently, absolutely positioned so it can be
+   taller than the navbar without disturbing the flex layout */
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--green-deep);
+  position: absolute;
+  top: 0;
+  left: max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem));
+  z-index: 1001;
+  display: block;
+  line-height: 0;
 }
 
 .nav-logo .logo-icon {
@@ -207,10 +207,12 @@ p  { font-size: 1rem; color: var(--text-mid); }
 
 /* Logo image */
 .logo-img {
-  height: 72px;
+  height: 110px;
   width: auto;
   display: block;
   object-fit: contain;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
 }
 .logo-img--footer {
   height: 80px;
