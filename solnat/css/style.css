@@ -1666,6 +1666,8 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .nav-links   { display: none; }
   .nav-cta     { display: none; }
   .hamburger   { display: flex; }
+  .nav-inner   { padding-left: 100px; }
+  .logo-img    { height: 72px; }
   .calc-grid   { grid-template-columns: 1fr; }
   .result-grid { grid-template-columns: 1fr 1fr; }
   .form-row    { grid-template-columns: 1fr; }
