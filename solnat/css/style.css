@@ -175,15 +175,22 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
+  padding-left: 90px; /* clears small logo on inner pages */
+}
+.nav-inner--home {
+  padding-left: 470px; /* clears large logo on home page */
 }
 
-/* Logo — normal flex item in the navbar (used on inner pages) */
+/* Logo — absolutely positioned, hangs from top of navbar */
 .nav-logo {
+  position: absolute;
+  top: 0;
+  left: max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem));
+  z-index: 1001;
   display: block;
   line-height: 0;
-  flex-shrink: 0;
 }
 
 .nav-logo .logo-icon {
@@ -206,13 +213,12 @@ p  { font-size: 1rem; color: var(--text-mid); }
   display: block;
   object-fit: contain;
 }
-/* Logo image — hero size (home page) */
-.logo-img--hero {
+/* Logo image — large version (home page navbar) */
+.logo-img--large {
   width: 450px;
-  max-width: 90%;
+  max-width: 90vw;
   height: auto;
   display: block;
-  margin-bottom: 2.5rem;
 }
 .logo-img--footer {
   height: 80px;
@@ -1663,11 +1669,12 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .slide-arrow { display: none; }
   .slideshow-dots { right: 1rem; bottom: 4rem; }
   .hero-content { padding: 7rem 0 6rem; }
-  .nav-links      { display: none; }
-  .nav-cta        { display: none; }
-  .hamburger      { display: flex; }
-  .logo-img       { height: 44px; }
-  .logo-img--hero { width: 260px; }
+  .nav-links        { display: none; }
+  .nav-cta          { display: none; }
+  .hamburger        { display: flex; }
+  .logo-img         { height: 44px; }
+  .logo-img--large  { width: 220px; }
+  .nav-inner--home  { padding-left: 240px; }
   .calc-grid   { grid-template-columns: 1fr; }
   .result-grid { grid-template-columns: 1fr 1fr; }
   .form-row    { grid-template-columns: 1fr; }
