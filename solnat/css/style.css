@@ -175,21 +175,15 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 1rem;
-  /* Leave space on the left for the independent logo */
-  padding-left: 200px;
 }
 
-/* Logo — sits independently, absolutely positioned so it can be
-   taller than the navbar without disturbing the flex layout */
+/* Logo — normal flex item in the navbar (used on inner pages) */
 .nav-logo {
-  position: absolute;
-  top: 0;
-  left: max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem));
-  z-index: 1001;
   display: block;
   line-height: 0;
+  flex-shrink: 0;
 }
 
 .nav-logo .logo-icon {
@@ -205,12 +199,20 @@ p  { font-size: 1rem; color: var(--text-mid); }
 
 .nav-logo span { color: var(--green-soft); }
 
-/* Logo image */
+/* Logo image — navbar size (inner pages) */
 .logo-img {
-  height: 150px;
+  height: 60px;
   width: auto;
   display: block;
   object-fit: contain;
+}
+/* Logo image — hero size (home page) */
+.logo-img--hero {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin-bottom: 2.5rem;
 }
 .logo-img--footer {
   height: 80px;
@@ -1661,11 +1663,11 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .slide-arrow { display: none; }
   .slideshow-dots { right: 1rem; bottom: 4rem; }
   .hero-content { padding: 7rem 0 6rem; }
-  .nav-links   { display: none; }
-  .nav-cta     { display: none; }
-  .hamburger   { display: flex; }
-  .nav-inner   { padding-left: 120px; }
-  .logo-img    { height: 90px; }
+  .nav-links      { display: none; }
+  .nav-cta        { display: none; }
+  .hamburger      { display: flex; }
+  .logo-img       { height: 44px; }
+  .logo-img--hero { width: 260px; }
   .calc-grid   { grid-template-columns: 1fr; }
   .result-grid { grid-template-columns: 1fr 1fr; }
   .form-row    { grid-template-columns: 1fr; }
