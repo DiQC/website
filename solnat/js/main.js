@@ -215,7 +215,7 @@ const translations = {
     back_btn: '← Tornar a l\'inici',
 
     // Jobs
-    jobs_nav:
+    jobs_nav:            'Treballa amb nosaltres',
     jobs_label:          'Uneix-te a l\'equip',
     jobs_title:          'Treballa amb nosaltres',
     jobs_intro:          'A SolNat busquem persones responsables, compromeses i amb ganes de treballar en el sector de la neteja i manteniment de plaques solars per a particulars i empreses.',
