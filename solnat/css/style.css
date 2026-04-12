@@ -230,10 +230,14 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-links li:not(.nav-dropdown) a:hover::after { width: 100%; }
 
 /* Dropdown chevron via CSS only — no raw text chars needed in HTML */
+.nav-dropdown > a {
+  white-space: nowrap;
+}
 .nav-dropdown > a::after {
   content: ' \25be';
   font-size: 0.75em;
   opacity: 0.55;
+  display: inline;
   position: static;
   width: auto; height: auto;
   background: none;

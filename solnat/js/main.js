@@ -22,6 +22,7 @@ const translations = {
 
     // Hero
     hero_tag:       '☀️ Serveis Solars a Catalunya',
+    hero_tag2:      '🧹 Neteja professional de panells solars',
     hero_title:     'Energia solar <em>neta i eficient</em> per a la teva llar',
     hero_desc:      'Instal·lació, neteja, manteniment i monitoratge de plaques solars a Catalunya. Maximitza el rendiment de la teva inversió solar.',
     hero_quote:     'Demana pressupost',
@@ -314,6 +315,7 @@ const translations = {
 
     // Hero
     hero_tag:       '☀️ Servicios Solares en Cataluña',
+    hero_tag2:      '🧹 Limpieza profesional de paneles solares',
     hero_title:     'Energía solar <em>limpia y eficiente</em> para tu hogar',
     hero_desc:      'Instalación, limpieza, mantenimiento y monitorización de paneles solares en Cataluña. Maximiza el rendimiento de tu inversión solar.',
     hero_quote:     'Pedir presupuesto',
