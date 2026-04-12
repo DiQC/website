@@ -205,6 +205,20 @@ p  { font-size: 1rem; color: var(--text-mid); }
 
 .nav-logo span { color: var(--green-soft); }
 
+/* Logo image */
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: contain;
+}
+.logo-img--footer {
+  height: 52px;
+  margin-bottom: 1rem;
+}
+.footer-logo-link { display: inline-block; }
+
 .nav-links {
   display: flex;
   align-items: center;
