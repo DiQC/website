@@ -5,11 +5,11 @@
 
 /* --- CSS Variables --- */
 :root {
-  --green-deep:    #1a3a2a;
-  --green-mid:     #2d6a4f;
-  --green-soft:    #52b788;
-  --green-light:   #b7e4c7;
-  --green-pale:    #d8f3dc;
+  --green-deep:    #0c4a6e;
+  --green-mid:     #0284c7;
+  --green-soft:    #38bdf8;
+  --green-light:   #bae6fd;
+  --green-pale:    #e0f2fe;
   --earth-dark:    #4a3728;
   --earth-mid:     #8b6a4f;
   --earth-warm:    #c8956c;
@@ -21,9 +21,9 @@
   --text-dark:     #1a1a1a;
   --text-mid:      #3d3d3d;
   --text-light:    #7a7a6a;
-  --shadow-sm:     0 2px 8px rgba(26,58,42,0.08);
-  --shadow-md:     0 8px 32px rgba(26,58,42,0.12);
-  --shadow-lg:     0 24px 64px rgba(26,58,42,0.16);
+  --shadow-sm:     0 2px 8px rgba(12,74,110,0.08);
+  --shadow-md:     0 8px 32px rgba(12,74,110,0.12);
+  --shadow-lg:     0 24px 64px rgba(12,74,110,0.16);
   --radius-sm:     8px;
   --radius-md:     16px;
   --radius-lg:     32px;
@@ -95,12 +95,12 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .btn-primary {
   background: var(--green-mid);
   color: white;
-  box-shadow: 0 4px 16px rgba(45,106,79,0.3);
+  box-shadow: 0 4px 16px rgba(2,132,199,0.3);
 }
 .btn-primary:hover {
   background: var(--green-deep);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(45,106,79,0.4);
+  box-shadow: 0 8px 24px rgba(2,132,199,0.4);
 }
 
 .btn-secondary {
@@ -175,12 +175,10 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 1rem;
-  padding-left: 90px; /* clears small logo on inner pages */
 }
 .nav-inner--home {
-  padding-left: 470px; /* clears large logo on home page */
 }
 
 /* Logo — absolutely positioned, hangs from top of navbar */
@@ -473,7 +471,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   border: 1px solid rgba(82,183,136,0.4);
   border-radius: 100px;
   padding: 0.4rem 1rem;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -751,7 +749,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 60%, rgba(26,58,42,0.08) 100%);
+  background: linear-gradient(to bottom, transparent 60%, rgba(12,74,110,0.08) 100%);
 }
 .service-card-body { padding: 1.5rem; }
 .service-card-body h3 { color: var(--green-deep); margin-bottom: 0.6rem; font-size: 1.2rem; }
@@ -1008,7 +1006,7 @@ p  { font-size: 1rem; color: var(--text-mid); }
   border-radius: 50%;
   background: var(--green-mid);
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(45,106,79,0.3);
+  box-shadow: 0 2px 6px rgba(2,132,199,0.3);
 }
 .range-value {
   text-align: right;
