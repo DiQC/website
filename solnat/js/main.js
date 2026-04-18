@@ -1222,6 +1222,7 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
 
 // ── Hero Slideshow ───────────────────────
 (function () {
+  const _initTime = Date.now();
   const slides = document.querySelectorAll('.hero-slide');
   const dots   = document.querySelectorAll('.slide-dot');
   const prev   = document.querySelector('.slide-prev');
@@ -1272,7 +1273,8 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
     if (Math.abs(diff) > 40) { goTo(diff > 0 ? current + 1 : current - 1); startAuto(); }
   }, { passive: true });
 
-  startAuto();
+  const elapsed = Date.now() - _initTime;
+  setTimeout(() => { goTo(current + 1); startAuto(); }, Math.max(300, DELAY - elapsed));
 })();
 document.addEventListener('DOMContentLoaded', () => {
   applyTranslations();
