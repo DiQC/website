@@ -341,9 +341,10 @@ const translations = {
     faq6_a: 'Instal·lem un datalogger connectat a internet que envia dades en temps real a la nostra plataforma i a la teva app mòbil. Reps alertes si el rendiment baixa per sota del normal i informes mensuals automàtics.',
 
     // Blog
-    blog_label:  'Blog',
-    blog_title:  'Consells i novetats solar',
-    blog_all:    'Veure tots els articles',
+    blog_label:     'Blog',
+    blog_title:     'Consells i novetats solar',
+    blog_page_desc: 'Articles sobre neteja, manteniment, subvencions i tecnologia fotovoltaica a Catalunya.',
+    blog_all:       'Veure tots els articles',
     blog1_tag:   'Manteniment',
     blog1_title: 'Per què netejar les plaques cada any: l\'impacte real en el rendiment',
     blog1_desc:  'La brutícia, el pol·len i els dipòsits poden reduir la producció solar i afectar el rendiment de la instal·lació. T\'expliquem quan convé netejar, què cal evitar i per què el manteniment marca la diferència.',
@@ -815,9 +816,10 @@ const translations = {
     faq6_a: 'Instalamos un datalogger conectado a internet que envía datos en tiempo real a nuestra plataforma y a tu app móvil. Recibes alertas si el rendimiento baja por debajo de lo normal e informes mensuales automáticos.',
 
     // Blog
-    blog_label:  'Blog',
-    blog_title:  'Consejos y novedades solar',
-    blog_all:    'Ver todos los artículos',
+    blog_label:     'Blog',
+    blog_title:     'Consejos y novedades solar',
+    blog_page_desc: 'Artículos sobre limpieza, mantenimiento, subvenciones y tecnología fotovoltaica en Cataluña.',
+    blog_all:       'Ver todos los artículos',
     blog1_tag:   'Mantenimiento',
     blog1_title: 'Por qué limpiar los paneles cada año: el impacto real en el rendimiento',
     blog1_desc:  'La suciedad, el polen y los depósitos pueden reducir la producción solar y afectar el rendimiento de la instalación. Te explicamos cuándo conviene limpiar, qué evitar y por qué el mantenimiento marca la diferencia.',
