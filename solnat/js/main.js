@@ -1,5 +1,5 @@
 /* =========================================
-   SolNat - Main JavaScript
+   Solmant - Main JavaScript
    ========================================= */
 
 // ── Language System ──────────────────────
@@ -46,16 +46,15 @@ const translations = {
 
     // About
     about_label:   'Qui som',
-    about_title:   'Experts en energia solar a Catalunya des del 2013',
-    about_desc1:   'A SolNat combinem tecnologia puntera amb un profund compromís amb el medi ambient. Oferim solucions solars integrals adaptades a cada client, des de cases unifamiliars fins a grans instal·lacions comercials.',
-    about_desc2:   'Treballem amb equips d\'alta qualitat i tècniques respectuoses amb l\'entorn, garantint el màxim rendiment de cada instal·lació.',
-    about_f1_title:'Neteja amb Aigua Delcalcificada',
-    about_f1_desc: 'Usem aigua delcalcificada, sense productes químics. Zero residus, zero ratllades.',
+    about_title:   'Neteja professional de plaques solars: recupera fins a un 30% d\'eficiència',
+    about_desc1:   'A Solmant ens especialitzem en la neteja i manteniment de plaques solars. Panells nets rendeixen fins a un 30% més, reduint directament la teva factura elèctrica.',
+    about_desc2:   'Treballem amb tècniques i equips professionals adaptats a cada instal·lació, sense productes químics i sense risc per als teus panells.',
+    about_f1_title:'Neteja amb Aigua Descalcificada',
+    about_f1_desc: 'Usem aigua descalcificada, sense productes químics. Zero residus, zero ratllades.',
     about_f2_title:'Instal·lació Certificada',
     about_f2_desc: 'Tots els tècnics estan acreditats per la Generalitat de Catalunya.',
     about_f3_title:'Revisió Anual del Estat',
     about_f3_desc: 'Inspecció anual completa per assegurar el perfecte funcionament de la teva instal·lació solar.',
-    about_badge:   'anys d\'experiència',
     about_btn:     'Coneix-nos millor',
 
     // Services
@@ -63,23 +62,24 @@ const translations = {
     srv_title:   'Tot el que necessites per al teu sistema solar',
     srv_desc:    'Oferim una gama completa de serveis, des de la primera instal·lació fins al manteniment preventiu i la neteja professional.',
     srv1_title:  'Instal·lació Residencial',
-    srv1_desc:   'Dissenyem i instal·lem sistemes solars a mida per a cases i xalets, amb estudi de viabilitat gratuït.',
+    srv1_desc:   'Creem instal·lacions solars a mida per a cases i xalets, pensades per maximitzar l\'estalvi, l\'eficiència i la integració estètica a la teva llar.',
     srv1_link:   'Saber més →',
     srv2_title:  'Instal·lació Comercial',
-    srv2_desc:   'Solucions per a empreses, naus industrials i comunitats. Màxim estalvi energètic i retorn ràpid de la inversió.',
+    srv2_desc:   'Implementem solucions solars per a empreses, naus i comunitats, orientades a reduir la despesa energètica i millorar la rendibilitat de cada projecte.',
     srv2_link:   'Saber més →',
     srv3_title:  'Neteja Professional',
-    srv3_desc:   'Neteja amb aigua desionitzada que elimina brutícia, pol·len i deposicions, recuperant fins al 30% del rendiment perdut.',
+    srv3_desc:   'Eliminem brutícia, pol·len i dipòsits amb sistemes de neteja especialitzats que ajuden a recuperar l\'eficiència i protegir el rendiment de la instal·lació.',
     srv3_link:   'Saber més →',
     srv4_title:  'Manteniment Preventiu',
-    srv4_desc:   'Revisions periòdiques per garantir el màxim rendiment i detectar qualsevol anomalia a temps.',
+    srv4_desc:   'Supervisem periòdicament la instal·lació per anticipar incidències, allargar la vida útil del sistema i garantir-ne un funcionament òptim.',
     srv4_link:   'Saber més →',
-    srv5_title:  'Monitoratge Intel·ligent',
-    srv5_desc:   'Sistemes de control en temps real que t\'avisen si el rendiment baixa i t\'envien informes mensuals.',
+    srv5_title:  'Estudi de la teva instal·lació',
+    srv5_desc:   'Analitzem l\'estat i el comportament de la teva instal·lació solar per identificar pèrdues de rendiment i proposar millores eficients i útils.',
     srv5_link:   'Saber més →',
     srv6_title:  'Assessoria i Subvencions',
-    srv6_desc:   'T\'ajudem a sol·licitar les ajudes i subvencions disponibles per a instal·lacions solars a Catalunya.',
+    srv6_desc:   'T\'ajudem a aprofitar les ajudes disponibles i a simplificar tots els tràmits perquè la teva inversió solar sigui més fàcil, clara i rendible.',
     srv6_link:   'Saber més →',
+    srv6_img:    'images/factura_catala.jpg',
 
     // How it works
     how_label:  'El nostre procés',
@@ -127,7 +127,7 @@ const translations = {
     calc_cta:        'Sol·licita estudi gratuït',
 
     // Why us
-    why_label: 'Per què SolNat',
+    why_label: 'Per què Solmant',
     why_title: 'Raons per confiar en nosaltres',
     why1_title:'Tècnics Certificats',
     why1_desc: 'Tot el personal té les acreditacions requerides per llei i formació contínua.',
@@ -164,13 +164,13 @@ const translations = {
     blog_all:    'Veure tots els articles',
     blog1_tag:   'Manteniment',
     blog1_title: 'Per què netejar les plaques cada any: l\'impacte real en el rendiment',
-    blog1_desc:  'Estudis mostren que les plaques netes produeixen fins al 30% més d\'energia. Descobreix quan i com fer-ho bé.',
+    blog1_desc:  'La brutícia, el pol·len i els dipòsits poden reduir la producció solar i afectar el rendiment de la instal·lació. T\'expliquem quan convé netejar, què cal evitar i per què el manteniment marca la diferència.',
     blog2_tag:   'Subvencions',
-    blog2_title: 'Guia completa d\'ajudes solars a Catalunya per al 2025',
-    blog2_desc:  'IDAE, PREE, MOVES III i bonificacions municipals: totes les opcions per finançar la teva instal·lació.',
+    blog2_title: 'Ajudes solars a Catalunya el 2026: què continua vigent i què ja ha tancat',
+    blog2_desc:  'Repassem l\'estat real de les ajudes: què ha finalitzat, quines bonificacions fiscals municipals poden continuar disponibles i on consultar la informació oficial abans d\'instal·lar.',
     blog3_tag:   'Tecnologia',
-    blog3_title: 'Panells bifacials: val la pena la inversió extra?',
-    blog3_desc:  'Analitzem els avantatges dels panells bifacials i en quines situacions compensa el sobrecost.',
+    blog3_title: 'Tecnologia solar el 2026: millores que ja estan marcant la diferència',
+    blog3_desc:  'Mòduls més eficients, més presència de tecnologia bifacial i noves solucions per minimitzar l\'efecte de la brutícia: t\'expliquem quines innovacions estan millorant les instal·lacions solars actuals.',
     blog_date1:  '12 mar 2025',
     blog_date2:  '28 feb 2025',
     blog_date3:  '14 feb 2025',
@@ -180,7 +180,7 @@ const translations = {
     contact_title:    'Parlem del teu projecte solar',
     contact_desc:     'Ompliu el formulari i us contactarem en menys de 24 hores amb un pressupost personalitzat i sense compromís.',
     contact_phone:    '+34 93 XXX XX XX',
-    contact_email:    'hola@solnat.cat',
+    contact_email:    'hola@solmant.cat',
     contact_address:  'Igualada, Catalunya',
     contact_hours:    'Dl-Dv: 8h – 19h',
     form_title:       'Sol·licita pressupost gratuït',
@@ -197,17 +197,17 @@ const translations = {
     form_message:     'Explica\'ns el teu cas',
     form_submit:      '📩 Enviar sol·licitud',
     form_ok_title:    '¡Missatge rebut!',
-    form_ok_desc:     'Us contactarem en menys de 24 hores. Gràcies per confiar en SolNat.',
+    form_ok_desc:     'Us contactarem en menys de 24 hores. Gràcies per confiar en Solmant.',
 
     // Footer
-    footer_desc:     'Experts en energia solar a Catalunya. Instal·lació, neteja i manteniment professional.',
+    footer_desc:     'Especialistes en neteja i manteniment de plaques solars a Catalunya.',
     footer_nav:      'Navegació',
     footer_services: 'Serveis',
     footer_contact:  'Contacte',
     footer_newsletter_title: 'Butlletí',
     footer_newsletter_placeholder: 'El teu email',
     footer_newsletter_btn: 'Subscriure\'m',
-    footer_copy:    '© 2026 SolNat. Tots els drets reservats.',
+    footer_copy:    '© 2026 Solmant. Tots els drets reservats.',
     footer_privacy: 'Política de privacitat',
     footer_terms:   'Avís legal',
     footer_cookies: 'Cookies',
@@ -219,7 +219,7 @@ const translations = {
     jobs_nav:            'Treballa amb nosaltres',
     jobs_label:          'Uneix-te a l\'equip',
     jobs_title:          'Treballa amb nosaltres',
-    jobs_intro:          'A SolNat busquem persones responsables, compromeses i amb ganes de treballar en el sector de la neteja i manteniment de plaques solars per a particulars i empreses.',
+    jobs_intro:          'A Solmant busquem persones responsables, compromeses i amb ganes de treballar en el sector de la neteja i manteniment de plaques solars per a particulars i empreses.',
     jobs_seek_title:     'Què busquem',
     jobs_seek_desc:      'Perfils per a tasques de neteja tècnica, revisió visual, manteniment preventiu i suport en treballs sobre cobertes i instal·lacions solars.',
     jobs_req_title:      'Requisits essencials per al lloc',
@@ -339,16 +339,15 @@ const translations = {
 
     // About
     about_label:   'Quiénes somos',
-    about_title:   'Expertos en energía solar en Cataluña desde 2013',
-    about_desc1:   'En SolNat combinamos tecnología punta con un profundo compromiso con el medio ambiente. Ofrecemos soluciones solares integrales adaptadas a cada cliente, desde casas unifamiliares hasta grandes instalaciones comerciales.',
-    about_desc2:   'Trabajamos con equipos de alta calidad y técnicas respetuosas con el entorno, garantizando el máximo rendimiento de cada instalación.',
+    about_title:   'Limpieza profesional de placas solares: recupera hasta un 30% de eficiencia',
+    about_desc1:   'En Solmant nos especializamos en la limpieza y mantenimiento de placas solares. Los paneles limpios rinden hasta un 30% más, reduciendo directamente tu factura eléctrica.',
+    about_desc2:   'Trabajamos con técnicas y equipos profesionales adaptados a cada instalación, sin productos químicos y sin riesgo para tus paneles.',
     about_f1_title:'Limpieza con Agua Descalcificada',
     about_f1_desc: 'Usamos agua descalcificada, sin productos químicos.',
     about_f2_title:'Instalación Certificada',
     about_f2_desc: 'Todos los técnicos están acreditados por la Generalitat de Catalunya.',
     about_f3_title:'Revisión Anual del Estado',
     about_f3_desc: 'Inspección anual completa para asegurar el perfecto funcionamiento de tu instalación solar.',
-    about_badge:   'años de experiencia',
     about_btn:     'Conócenos mejor',
 
     // Services
@@ -356,23 +355,24 @@ const translations = {
     srv_title:   'Todo lo que necesitas para tu sistema solar',
     srv_desc:    'Ofrecemos una gama completa de servicios, desde la primera instalación hasta el mantenimiento preventivo y la limpieza profesional.',
     srv1_title:  'Instalación Residencial',
-    srv1_desc:   'Diseñamos e instalamos sistemas solares a medida para casas y chalets, con estudio de viabilidad gratuito.',
+    srv1_desc:   'Creamos instalaciones solares a medida para casas y chalets, diseñadas para maximizar el ahorro, la eficiencia y la integración estética en tu hogar.',
     srv1_link:   'Saber más →',
     srv2_title:  'Instalación Comercial',
-    srv2_desc:   'Soluciones para empresas, naves industriales y comunidades. Máximo ahorro energético y rápido retorno de la inversión.',
+    srv2_desc:   'Implementamos soluciones solares para empresas, naves y comunidades, orientadas a reducir el gasto energético y mejorar la rentabilidad de cada proyecto.',
     srv2_link:   'Saber más →',
     srv3_title:  'Limpieza Profesional',
-    srv3_desc:   'Limpieza con agua desionizada que elimina suciedad, polen y excrementos, recuperando hasta el 30% del rendimiento perdido.',
+    srv3_desc:   'Eliminamos suciedad, polen y depósitos con sistemas de limpieza especializados que ayudan a recuperar la eficiencia y proteger el rendimiento de la instalación.',
     srv3_link:   'Saber más →',
     srv4_title:  'Mantenimiento Preventivo',
-    srv4_desc:   'Revisiones periódicas para garantizar el máximo rendimiento y detectar cualquier anomalía a tiempo.',
+    srv4_desc:   'Supervisamos periódicamente la instalación para anticipar incidencias, alargar la vida útil del sistema y garantizar un funcionamiento óptimo.',
     srv4_link:   'Saber más →',
-    srv5_title:  'Monitorización Inteligente',
-    srv5_desc:   'Sistemas de control en tiempo real que te avisan si el rendimiento baja y te envían informes mensuales.',
+    srv5_title:  'Estudio de tu instalación',
+    srv5_desc:   'Analizamos el estado y comportamiento de tu instalación solar para identificar pérdidas de rendimiento y proponer mejoras eficientes y útiles.',
     srv5_link:   'Saber más →',
     srv6_title:  'Asesoría y Subvenciones',
-    srv6_desc:   'Te ayudamos a solicitar las ayudas y subvenciones disponibles para instalaciones solares en Cataluña.',
+    srv6_desc:   'Te ayudamos a aprovechar las ayudas disponibles y a simplificar todos los trámites para que tu inversión solar sea más fácil, clara y rentable.',
     srv6_link:   'Saber más →',
+    srv6_img:    'images/factura_castella.jpg',
 
     // How it works
     how_label:  'Nuestro proceso',
@@ -420,7 +420,7 @@ const translations = {
     calc_cta:        'Solicitar estudio gratuito',
 
     // Why us
-    why_label: 'Por qué SolNat',
+    why_label: 'Por qué Solmant',
     why_title: 'Razones para confiar en nosotros',
     why1_title:'Técnicos Certificados',
     why1_desc: 'Todo el personal tiene las acreditaciones requeridas por ley y formación continua.',
@@ -457,13 +457,13 @@ const translations = {
     blog_all:    'Ver todos los artículos',
     blog1_tag:   'Mantenimiento',
     blog1_title: 'Por qué limpiar los paneles cada año: el impacto real en el rendimiento',
-    blog1_desc:  'Estudios muestran que los paneles limpios producen hasta un 30% más de energía. Descubre cuándo y cómo hacerlo bien.',
+    blog1_desc:  'La suciedad, el polen y los depósitos pueden reducir la producción solar y afectar el rendimiento de la instalación. Te explicamos cuándo conviene limpiar, qué evitar y por qué el mantenimiento marca la diferencia.',
     blog2_tag:   'Subvenciones',
-    blog2_title: 'Guía completa de ayudas solares en Cataluña para 2025',
-    blog2_desc:  'IDAE, PREE, MOVES III y bonificaciones municipales: todas las opciones para financiar tu instalación.',
+    blog2_title: 'Ayudas solares en Cataluña en 2026: qué sigue vigente y qué ya ha cerrado',
+    blog2_desc:  'Repasamos el estado real de las ayudas: qué ha finalizado, qué bonificaciones fiscales municipales pueden seguir disponibles y dónde consultar la información oficial antes de instalar.',
     blog3_tag:   'Tecnología',
-    blog3_title: 'Paneles bifaciales: ¿vale la pena la inversión extra?',
-    blog3_desc:  'Analizamos las ventajas de los paneles bifaciales y en qué situaciones compensa el sobrecoste.',
+    blog3_title: 'Tecnología solar en 2026: mejoras que ya están marcando la diferencia',
+    blog3_desc:  'Módulos más eficientes, mayor presencia de tecnología bifacial y nuevas soluciones para minimizar el efecto de la suciedad: te explicamos qué innovaciones están mejorando las instalaciones solares actuales.',
     blog_date1:  '12 mar 2025',
     blog_date2:  '28 feb 2025',
     blog_date3:  '14 feb 2025',
@@ -473,7 +473,7 @@ const translations = {
     contact_title:    'Hablemos de tu proyecto solar',
     contact_desc:     'Rellena el formulario y te contactaremos en menos de 24 horas con un presupuesto personalizado y sin compromiso.',
     contact_phone:    '+34 93 XXX XX XX',
-    contact_email:    'hola@solnat.cat',
+    contact_email:    'hola@solmant.cat',
     contact_address:  'Igualada, Cataluña',
     contact_hours:    'Lun-Vie: 8h – 19h',
     form_title:       'Solicita presupuesto gratuito',
@@ -490,17 +490,17 @@ const translations = {
     form_message:     'Cuéntanos tu caso',
     form_submit:      '📩 Enviar solicitud',
     form_ok_title:    '¡Mensaje recibido!',
-    form_ok_desc:     'Te contactaremos en menos de 24 horas. Gracias por confiar en SolNat.',
+    form_ok_desc:     'Te contactaremos en menos de 24 horas. Gracias por confiar en Solmant.',
 
     // Footer
-    footer_desc:     'Expertos en energía solar en Cataluña. Instalación, limpieza y mantenimiento profesional.',
+    footer_desc:     'Especialistas en limpieza y mantenimiento de placas solares en Cataluña.',
     footer_nav:      'Navegación',
     footer_services: 'Servicios',
     footer_contact:  'Contacto',
     footer_newsletter_title: 'Boletín',
     footer_newsletter_placeholder: 'Tu email',
     footer_newsletter_btn: 'Suscribirme',
-    footer_copy:    '© 2026 SolNat. Todos los derechos reservados.',
+    footer_copy:    '© 2026 Solmant. Todos los derechos reservados.',
     footer_privacy: 'Política de privacidad',
     footer_terms:   'Aviso legal',
     footer_cookies: 'Cookies',
@@ -512,7 +512,7 @@ const translations = {
     jobs_nav:            'Trabaja con nosotros',
     jobs_label:          'Únete al equipo',
     jobs_title:          'Trabaja con nosotros',
-    jobs_intro:          'En SolNat buscamos personas responsables, comprometidas y con ganas de trabajar en el sector de la limpieza y mantenimiento de paneles solares para particulares y empresas.',
+    jobs_intro:          'En Solmant buscamos personas responsables, comprometidas y con ganas de trabajar en el sector de la limpieza y mantenimiento de paneles solares para particulares y empresas.',
     jobs_seek_title:     '¿Qué buscamos?',
     jobs_seek_desc:      'Perfiles para tareas de limpieza técnica, revisión visual, mantenimiento preventivo y apoyo en trabajos sobre cubiertas e instalaciones solares.',
     jobs_req_title:      'Requisitos esenciales del puesto',
@@ -592,11 +592,11 @@ const translations = {
 };
 
 // ── Active language ──────────────────────
-let currentLang = localStorage.getItem('solnat-lang') || 'ca';
+let currentLang = localStorage.getItem('solmant-lang') || 'ca';
 
 function setLang(lang) {
   currentLang = lang;
-  localStorage.setItem('solnat-lang', lang);
+  localStorage.setItem('solmant-lang', lang);
   document.documentElement.lang = lang === 'ca' ? 'ca' : 'es';
   applyTranslations();
   updateLangButtons();
@@ -613,6 +613,11 @@ function applyTranslations() {
         el.innerHTML = t[key];
       }
     }
+  });
+  // Language-specific image sources
+  document.querySelectorAll('[data-i18n-src]').forEach(el => {
+    const key = el.getAttribute('data-i18n-src');
+    if (t[key] !== undefined) el.src = t[key];
   });
   // Options inside selects
   document.querySelectorAll('[data-i18n-option]').forEach(el => {
@@ -860,7 +865,7 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
 
   let current   = 0;
   let timer     = null;
-  const DELAY   = 5000; // ms between slides
+  const DELAY   = 3000; // ms between slides
 
   function goTo(index) {
     slides[current].classList.remove('active');
