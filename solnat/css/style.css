@@ -5,11 +5,11 @@
 
 /* --- CSS Variables --- */
 :root {
-  --green-deep:    #0c4a6e;
-  --green-mid:     #0284c7;
-  --green-soft:    #38bdf8;
-  --green-light:   #bae6fd;
-  --green-pale:    #e0f2fe;
+  --green-deep:    #0D263B;
+  --green-mid:     #4459A1;
+  --green-soft:    #6b7fca;
+  --green-light:   #c5ccec;
+  --green-pale:    #eaecf8;
   --earth-dark:    #4a3728;
   --earth-mid:     #8b6a4f;
   --earth-warm:    #c8956c;
@@ -21,9 +21,9 @@
   --text-dark:     #1a1a1a;
   --text-mid:      #3d3d3d;
   --text-light:    #7a7a6a;
-  --shadow-sm:     0 2px 8px rgba(12,74,110,0.08);
-  --shadow-md:     0 8px 32px rgba(12,74,110,0.12);
-  --shadow-lg:     0 24px 64px rgba(12,74,110,0.16);
+  --shadow-sm:     0 2px 8px rgba(13,38,59,0.08);
+  --shadow-md:     0 8px 32px rgba(13,38,59,0.12);
+  --shadow-lg:     0 24px 64px rgba(13,38,59,0.16);
   --radius-sm:     8px;
   --radius-md:     16px;
   --radius-lg:     32px;
@@ -181,41 +181,25 @@ p  { font-size: 1rem; color: var(--text-mid); }
 .nav-inner--home {
 }
 
-/* Logo — absolutely positioned, hangs from top of navbar */
+/* Logo */
 .nav-logo {
-  position: absolute;
-  top: 0;
-  left: max(1.5rem, calc((100vw - 1200px) / 2 + 1.5rem));
-  z-index: 1001;
   display: block;
   line-height: 0;
+  flex-shrink: 0;
 }
 
-.nav-logo .logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--green-mid);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
-
-.nav-logo span { color: var(--green-soft); }
-
-/* Logo image — navbar size (inner pages) */
+/* Logo image — navbar */
 .logo-img {
-  height: 60px;
+  height: 46px;
   width: auto;
   display: block;
   object-fit: contain;
 }
-/* Logo image — large version (home page navbar) */
+/* Logo image — large version */
 .logo-img--large {
-  width: 450px;
-  max-width: 90vw;
-  height: auto;
+  height: 46px;
+  width: auto;
+  max-width: 260px;
   display: block;
 }
 .logo-img--footer {
@@ -1670,9 +1654,8 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .nav-links        { display: none; }
   .nav-cta          { display: none; }
   .hamburger        { display: flex; }
-  .logo-img         { height: 44px; }
-  .logo-img--large  { width: 220px; }
-  .nav-inner--home  { padding-left: 240px; }
+  .logo-img         { height: 36px; }
+  .logo-img--large  { height: 36px; max-width: 180px; }
   .calc-grid   { grid-template-columns: 1fr; }
   .result-grid { grid-template-columns: 1fr 1fr; }
   .form-row    { grid-template-columns: 1fr; }
