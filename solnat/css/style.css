@@ -1,5 +1,5 @@
 /* =========================================
-   SolNat - Solar Services Catalunya
+   Solmant - Solar Services Catalunya
    Natural & Eco-Friendly Design System
    ========================================= */
 
@@ -1645,4 +1645,260 @@ p  { font-size: 1rem; color: var(--text-mid); }
   .grid-4 { grid-template-columns: 1fr; }
   .result-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
+}
+
+
+/* =========================================
+   SERVICE DETAIL PAGES
+   ========================================= */
+
+/* Hero accent */
+.srv-detail-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-soft));
+}
+
+/* Intro 2-col grid */
+.srv-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.srv-lead {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+}
+.srv-feature-panel {
+  background: var(--green-pale);
+  border-left: 4px solid var(--green-mid);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 2rem 2rem 2rem 1.75rem;
+}
+.srv-feature-panel h4 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 1.5rem;
+}
+.srv-feature-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.srv-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.97rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+.srv-feat-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  background: var(--green-mid);
+  border-radius: 50%;
+}
+
+/* Analysis section header */
+.srv-section-header {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+}
+.srv-section-header h2 { color: var(--green-deep); margin-bottom: 0.75rem; }
+
+/* Checklist grid */
+.srv-checks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.srv-check-item {
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 3px solid var(--green-mid);
+  transition: var(--transition);
+}
+.srv-check-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.srv-check-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: var(--green-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.srv-check-item p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin: 0;
+}
+.srv-analysis-end {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+}
+
+/* Split text blocks */
+.srv-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+.srv-text-block {
+  padding: 2.5rem;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--green-pale);
+  transition: var(--transition);
+}
+.srv-text-block:hover { box-shadow: var(--shadow-md); border-top-color: var(--green-mid); }
+.srv-block-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--green-pale);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.srv-text-block h3 {
+  color: var(--green-deep);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* Process section */
+.srv-process-section {
+  background: var(--green-deep);
+  position: relative;
+  overflow: hidden;
+}
+.srv-process-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(68,89,161,0.25) 0%, transparent 60%);
+}
+.srv-process-section .container { position: relative; }
+.srv-process-header {
+  margin-bottom: 3rem;
+}
+.srv-process-header .section-label { color: var(--green-soft); }
+.srv-process-header h2 { color: white; }
+.srv-process-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.srv-process-text p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+.srv-process-panel {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+}
+.srv-process-panel h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.srv-process-panel p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+/* CTA section */
+.srv-cta {
+  background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-deep) 100%);
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.srv-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.08) 0%, transparent 60%);
+}
+.srv-cta .container { position: relative; }
+.srv-cta h2 {
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  max-width: 680px;
+  margin: 0 auto 1.25rem;
+}
+.srv-cta p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.05rem;
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+.srv-cta .btn-primary {
+  background: white;
+  color: var(--green-deep);
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+.srv-cta .btn-primary:hover {
+  background: var(--green-pale);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 36px rgba(0,0,0,0.25);
+}
+
+/* Responsive – service detail pages */
+@media (max-width: 900px) {
+  .srv-intro-grid,
+  .srv-split-grid,
+  .srv-process-content { grid-template-columns: 1fr; gap: 2rem; }
+  .srv-feature-panel { border-left-width: 3px; }
+}
+@media (max-width: 600px) {
+  .srv-checks { grid-template-columns: 1fr 1fr; }
+  .srv-cta { padding: 4rem 0; }
+}
+@media (max-width: 400px) {
+  .srv-checks { grid-template-columns: 1fr; }
 }
